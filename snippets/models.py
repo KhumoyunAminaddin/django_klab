@@ -1,7 +1,9 @@
+import os
+
 from django.contrib import auth
 from django.db import models
 from pygments import highlight
-from pygments.formatters import HtmlFormatter
+from pygments.formatters.html import HtmlFormatter
 from pygments.lexers import get_all_lexers, get_lexer_by_name
 from pygments.styles import get_all_styles
 
@@ -10,8 +12,7 @@ LANGUAGE_CHOICES = sorted([(item[1][0], item[0]) for item in LEXERS])
 STYLE_CHOICES = sorted([(item, item) for item in get_all_styles()])
 
 RESTAURANTS = [
-    # 'http://172.22.23.240:5000',
-    'https://flask-app-z20f.onrender.com'
+    os.getenv('RESTAURANT_URL'),
 ]
 
 

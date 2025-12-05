@@ -1,5 +1,3 @@
-from distutils.dir_util import remove_tree
-
 from django.contrib import auth
 import requests
 from django.http import HttpResponse, JsonResponse
