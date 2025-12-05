@@ -1,4 +1,3 @@
 # django_klab
-# django_klab
-# django_klab
-# django_klab
+
+This is learning material for django beginners.
